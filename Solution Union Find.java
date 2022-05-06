@@ -64,7 +64,7 @@ class UnionFind {
         dammyValueLeftmostSide = rows * columns;
         dammyValueRightmostSide = rows * columns + 1;
 
-        //(rows * columns + 2) to take account for the two dummy values.
+        //(rows * columns + 2) to take account of the two dummy values.
         parent = IntStream.range(0, rows * columns + 2).toArray();
         rank = new int[rows * columns + 2];
         joinCornerColumnsToDummyValues(rows, columns);

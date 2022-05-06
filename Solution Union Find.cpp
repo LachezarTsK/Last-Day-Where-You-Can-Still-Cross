@@ -16,7 +16,7 @@ public:
         dammyValueLeftmostSide = rows * columns;
         dammyValueRightmostSide = rows * columns + 1;
 
-        //(rows * columns + 2) to take account for the two dummy values.
+        //(rows * columns + 2) to take account of the two dummy values.
         parent.resize(rows * columns + 2);
         iota(parent.begin(), parent.end(), 0);
         rank.resize(rows * columns + 2);

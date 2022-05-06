@@ -69,7 +69,7 @@ class UnionFind {
         this.dammyValueLeftmostSide = rows * columns;
         this.dammyValueRightmostSide = rows * columns + 1;
 
-        //(rows * columns + 2) to take account for the two dummy values.
+        //(rows * columns + 2) to take account of the two dummy values.
         this.parent = Array.from(Array(rows * columns + 2).keys());
         this.rank = new Array(rows * columns + 2);
         this.joinCornerColumnsToDummyValues(rows, columns);
